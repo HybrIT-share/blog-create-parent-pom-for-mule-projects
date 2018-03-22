@@ -1,0 +1,9 @@
+
+studio_id.xml
+.mule/
+.project
+.classpath
+.metadata
+catalog/
+
+target/
