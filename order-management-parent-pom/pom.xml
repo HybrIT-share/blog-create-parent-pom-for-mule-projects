@@ -15,7 +15,9 @@
 
 		<mule.version>3.9.0</mule.version>
 		<mule.tools.version>1.2</mule.tools.version>
+		<build-helper-maven-plugin.version>1.7</build-helper-maven-plugin.version>
 	</properties>
+	
 	<dependencyManagement>
 		<!-- Mule Dependencies -->
 		<dependencies>
@@ -88,6 +90,7 @@
 	</dependencyManagement>
 
 	<build>
+	<pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -101,7 +104,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.7</version>
+				<version>${build-helper-maven-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>add-resource</id>
@@ -126,6 +129,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+		</pluginManagement>
 	</build>
 
 	<!-- Mule Dependencies -->
