@@ -4,6 +4,8 @@ studio_id.xml
 .project
 .classpath
 .metadata
+.settings/
+.externalToolBuilders/
 catalog/
 
 target/
