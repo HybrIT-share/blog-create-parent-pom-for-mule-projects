@@ -9,3 +9,5 @@ studio_id.xml
 catalog/
 
 target/
+
+*.iml
